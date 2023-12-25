@@ -82,6 +82,11 @@ public class FLogin extends javax.swing.JFrame {
         BLogin.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         BLogin.setForeground(new java.awt.Color(255, 255, 255));
         BLogin.setText("Login");
+        BLogin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BLoginActionPerformed(evt);
+            }
+        });
         jPanel2.add(BLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 282, 346, 43));
 
         BExit.setBackground(new java.awt.Color(255, 51, 51));
@@ -140,6 +145,15 @@ public class FLogin extends javax.swing.JFrame {
         int y = evt.getYOnScreen();
         this.setLocation(x - xx, y -xy);
     }//GEN-LAST:event_formMouseDragged
+
+    private void BLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BLoginActionPerformed
+        // TODO add your handling code here:
+        Futama mn = new Futama ();
+        mn.setVisible(true);
+        mn.revalidate();
+        
+        dispose();
+    }//GEN-LAST:event_BLoginActionPerformed
 
     /**
      * @param args the command line arguments

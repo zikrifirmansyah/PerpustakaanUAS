@@ -5,8 +5,13 @@
 package perpustakaan;
 
 import java.awt.Color;
+import view.menuAdmin;
+import view.menuAnggota;
+import view.menuBuku;
 import view.menuDashboard;
-
+import view.menuLPeminjaman;
+import view.menuPeminjaman;
+import view.menuPengembalian;
 /**
  *
  * @author zikri
@@ -68,6 +73,7 @@ public class Futama extends javax.swing.JFrame {
         btn_dashboard = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         Nav = new javax.swing.JPanel();
+        BExit = new javax.swing.JButton();
         jPanel5 = new javax.swing.JPanel();
         jPanel9 = new javax.swing.JPanel();
         PnUtama = new javax.swing.JPanel();
@@ -549,15 +555,36 @@ public class Futama extends javax.swing.JFrame {
         Nav.setBackground(new java.awt.Color(0, 204, 204));
         Nav.setPreferredSize(new java.awt.Dimension(950, 100));
 
+        BExit.setBackground(new java.awt.Color(255, 51, 51));
+        BExit.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        BExit.setForeground(new java.awt.Color(255, 255, 255));
+        BExit.setText("Exit");
+        BExit.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BExitMouseClicked(evt);
+            }
+        });
+        BExit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BExitActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout NavLayout = new javax.swing.GroupLayout(Nav);
         Nav.setLayout(NavLayout);
         NavLayout.setHorizontalGroup(
             NavLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 980, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, NavLayout.createSequentialGroup()
+                .addContainerGap(886, Short.MAX_VALUE)
+                .addComponent(BExit)
+                .addGap(22, 22, 22))
         );
         NavLayout.setVerticalGroup(
             NavLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGroup(NavLayout.createSequentialGroup()
+                .addGap(27, 27, 27)
+                .addComponent(BExit)
+                .addContainerGap(41, Short.MAX_VALUE))
         );
 
         jPanel3.add(Nav, java.awt.BorderLayout.PAGE_START);
@@ -640,74 +667,140 @@ public class Futama extends javax.swing.JFrame {
 
     private void btn_AnggotaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_AnggotaMouseClicked
         // TODO add your handling code here:
+        PnAnggota.setBackground(Color.GRAY);
+        PnLine2.setBackground(Color.blue);
+        
+        PnUtama.removeAll();
+        PnUtama.add(new menuAnggota());
+        PnUtama.repaint();
+        PnUtama.revalidate();
     }//GEN-LAST:event_btn_AnggotaMouseClicked
 
     private void btn_AnggotaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_AnggotaMouseEntered
         // TODO add your handling code here:
+        PnAnggota.setBackground(Color.white);
+        PnLine2.setBackground(Color.blue);
     }//GEN-LAST:event_btn_AnggotaMouseEntered
 
     private void btn_AnggotaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_AnggotaMouseExited
         // TODO add your handling code here:
+        PnAnggota.setBackground(Color.white);
+        PnLine2.setBackground(Color.white);
     }//GEN-LAST:event_btn_AnggotaMouseExited
 
     private void btn_BukuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_BukuMouseClicked
         // TODO add your handling code here:
+        PnBuku.setBackground(Color.GRAY);
+        PnLine3.setBackground(Color.blue);
+        
+        PnUtama.removeAll();
+        PnUtama.add(new menuBuku());
+        PnUtama.repaint();
+        PnUtama.revalidate();
     }//GEN-LAST:event_btn_BukuMouseClicked
 
     private void btn_BukuMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_BukuMouseEntered
         // TODO add your handling code here:
+        PnBuku.setBackground(Color.white);
+        PnLine3.setBackground(Color.blue);
     }//GEN-LAST:event_btn_BukuMouseEntered
 
     private void btn_BukuMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_BukuMouseExited
         // TODO add your handling code here:
+        PnBuku.setBackground(Color.white);
+        PnLine3.setBackground(Color.white);
     }//GEN-LAST:event_btn_BukuMouseExited
 
     private void btn_AdminMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_AdminMouseClicked
         // TODO add your handling code here:
+        PnAdmin.setBackground(Color.GRAY);
+        PnLine4.setBackground(Color.blue);
+        
+        PnUtama.removeAll();
+        PnUtama.add(new menuAdmin());
+        PnUtama.repaint();
+        PnUtama.revalidate();
     }//GEN-LAST:event_btn_AdminMouseClicked
 
     private void btn_AdminMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_AdminMouseEntered
         // TODO add your handling code here:
+        PnAdmin.setBackground(Color.white);
+        PnLine4.setBackground(Color.blue);
     }//GEN-LAST:event_btn_AdminMouseEntered
 
     private void btn_AdminMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_AdminMouseExited
         // TODO add your handling code here:
+        PnAdmin.setBackground(Color.white);
+        PnLine4.setBackground(Color.white);
     }//GEN-LAST:event_btn_AdminMouseExited
 
     private void btn_PeminjamanMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_PeminjamanMouseClicked
         // TODO add your handling code here:
+        PnPeminjaman.setBackground(Color.GRAY);
+        PnLine5.setBackground(Color.blue);
+        
+        PnUtama.removeAll();
+        PnUtama.add(new menuPeminjaman());
+        PnUtama.repaint();
+        PnUtama.revalidate();
     }//GEN-LAST:event_btn_PeminjamanMouseClicked
 
     private void btn_PeminjamanMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_PeminjamanMouseEntered
         // TODO add your handling code here:
+        PnPeminjaman.setBackground(Color.white);
+        PnLine5.setBackground(Color.blue);
     }//GEN-LAST:event_btn_PeminjamanMouseEntered
 
     private void btn_PeminjamanMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_PeminjamanMouseExited
         // TODO add your handling code here:
+        PnPeminjaman.setBackground(Color.white);
+        PnLine5.setBackground(Color.white);
     }//GEN-LAST:event_btn_PeminjamanMouseExited
 
     private void btn_PengembalianMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_PengembalianMouseClicked
         // TODO add your handling code here:
+        PnPengembalian.setBackground(Color.GRAY);
+        PnLine6.setBackground(Color.blue);
+        
+        PnUtama.removeAll();
+        PnUtama.add(new menuPengembalian());
+        PnUtama.repaint();
+        PnUtama.revalidate();
     }//GEN-LAST:event_btn_PengembalianMouseClicked
 
     private void btn_PengembalianMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_PengembalianMouseEntered
         // TODO add your handling code here:
+        PnPengembalian.setBackground(Color.white);
+        PnLine6.setBackground(Color.blue);
     }//GEN-LAST:event_btn_PengembalianMouseEntered
 
     private void btn_PengembalianMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_PengembalianMouseExited
         // TODO add your handling code here:
+        PnPengembalian.setBackground(Color.white);
+        PnLine6.setBackground(Color.white);
     }//GEN-LAST:event_btn_PengembalianMouseExited
 
     private void btn_LPeminjamanMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_LPeminjamanMouseClicked
         // TODO add your handling code here:
+        PnLPeminjaman.setBackground(Color.GRAY);
+        PnLine7.setBackground(Color.blue);
+        
+        PnUtama.removeAll();
+        PnUtama.add(new menuLPeminjaman());
+        PnUtama.repaint();
+        PnUtama.revalidate();
     }//GEN-LAST:event_btn_LPeminjamanMouseClicked
 
     private void btn_LPeminjamanMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_LPeminjamanMouseEntered
         // TODO add your handling code here:
+        PnLPeminjaman.setBackground(Color.white);
+        PnLine7.setBackground(Color.blue);
     }//GEN-LAST:event_btn_LPeminjamanMouseEntered
 
     private void btn_LPeminjamanMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_LPeminjamanMouseExited
         // TODO add your handling code here:
+        PnLPeminjaman.setBackground(Color.white);
+        PnLine7.setBackground(Color.white);
     }//GEN-LAST:event_btn_LPeminjamanMouseExited
 
     private void formMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_formMouseDragged
@@ -716,6 +809,16 @@ public class Futama extends javax.swing.JFrame {
         int y = evt.getYOnScreen();
         this.setLocation(x - xx, y -xy);
     }//GEN-LAST:event_formMouseDragged
+
+    private void BExitMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BExitMouseClicked
+        // TODO add your handling code here:
+        dispose();
+        System.exit(0);
+    }//GEN-LAST:event_BExitMouseClicked
+
+    private void BExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BExitActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BExitActionPerformed
 
     /**
      * @param args the command line arguments
@@ -753,6 +856,7 @@ public class Futama extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton BExit;
     private javax.swing.JLabel LAdmin;
     private javax.swing.JLabel LAnggota;
     private javax.swing.JLabel LBuku;

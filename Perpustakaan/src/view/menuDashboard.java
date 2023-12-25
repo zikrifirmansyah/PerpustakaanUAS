@@ -49,8 +49,6 @@ public class menuDashboard extends javax.swing.JPanel {
         jLabel2 = new javax.swing.JLabel();
         LDashboard = new javax.swing.JLabel();
 
-        setPreferredSize(new java.awt.Dimension(941, 531));
-
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setPreferredSize(new java.awt.Dimension(940, 530));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -97,9 +95,6 @@ public class menuDashboard extends javax.swing.JPanel {
                         .addComponent(JPeminjam)))
                 .addContainerGap(15, Short.MAX_VALUE))
         );
-
-        TPeminjaman.getAccessibleContext().setAccessibleName("TAnggota");
-        LPeminjam.getAccessibleContext().setAccessibleName("");
 
         jPanel1.add(CPeminjam, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 90, 180, 100));
 
@@ -268,11 +263,11 @@ public class menuDashboard extends javax.swing.JPanel {
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 941, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 532, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 539, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
     }// </editor-fold>//GEN-END:initComponents
 
