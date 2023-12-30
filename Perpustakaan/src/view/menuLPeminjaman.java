@@ -30,16 +30,6 @@ public class menuLPeminjaman extends javax.swing.JPanel {
         TPeminjaman = new javax.swing.JLabel();
         LPeminjam = new javax.swing.JLabel();
         JPeminjam = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        TbPeminjam1 = new javax.swing.JTable();
-        SDaschboard1 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        LDashboard1 = new javax.swing.JLabel();
-        CPeminjam1 = new javax.swing.JPanel();
-        TPeminjaman1 = new javax.swing.JLabel();
-        LPeminjam1 = new javax.swing.JLabel();
-        JPeminjam1 = new javax.swing.JLabel();
 
         CPeminjam.setBackground(new java.awt.Color(0, 204, 204));
 
@@ -84,109 +74,14 @@ public class menuLPeminjaman extends javax.swing.JPanel {
                 .addContainerGap(15, Short.MAX_VALUE))
         );
 
-        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel3.setPreferredSize(new java.awt.Dimension(940, 530));
-        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        TbPeminjam1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
-            }
-        ));
-        jScrollPane2.setViewportView(TbPeminjam1);
-
-        jPanel3.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, 900, 260));
-
-        SDaschboard1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        SDaschboard1.setForeground(new java.awt.Color(102, 102, 102));
-        SDaschboard1.setText("Master Data > Laporan Peminjaman");
-        jPanel3.add(SDaschboard1, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 20, -1, -1));
-
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel3.setText("Laporan Peminjaman");
-        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, -1, -1));
-
-        LDashboard1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/LPemnjaman.png"))); // NOI18N
-        jPanel3.add(LDashboard1, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 10, -1, -1));
-
-        CPeminjam1.setBackground(new java.awt.Color(0, 204, 204));
-
-        TPeminjaman1.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
-        TPeminjaman1.setForeground(new java.awt.Color(255, 255, 255));
-        TPeminjaman1.setText("Peminjaman");
-
-        LPeminjam1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        LPeminjam1.setForeground(new java.awt.Color(255, 255, 255));
-        LPeminjam1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/reading-book.png"))); // NOI18N
-
-        JPeminjam1.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        JPeminjam1.setForeground(new java.awt.Color(255, 255, 255));
-        JPeminjam1.setText("000");
-
-        javax.swing.GroupLayout CPeminjam1Layout = new javax.swing.GroupLayout(CPeminjam1);
-        CPeminjam1.setLayout(CPeminjam1Layout);
-        CPeminjam1Layout.setHorizontalGroup(
-            CPeminjam1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(CPeminjam1Layout.createSequentialGroup()
-                .addGroup(CPeminjam1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(CPeminjam1Layout.createSequentialGroup()
-                        .addGap(19, 19, 19)
-                        .addComponent(JPeminjam1))
-                    .addGroup(CPeminjam1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(TPeminjaman1)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(LPeminjam1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        CPeminjam1Layout.setVerticalGroup(
-            CPeminjam1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(CPeminjam1Layout.createSequentialGroup()
-                .addGap(12, 12, 12)
-                .addGroup(CPeminjam1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(LPeminjam1)
-                    .addGroup(CPeminjam1Layout.createSequentialGroup()
-                        .addComponent(TPeminjaman1, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(JPeminjam1)))
-                .addContainerGap(15, Short.MAX_VALUE))
-        );
-
-        jPanel3.add(CPeminjam1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 180, 100));
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 539, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
+        setLayout(new java.awt.CardLayout());
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel CPeminjam;
-    private javax.swing.JPanel CPeminjam1;
     private javax.swing.JLabel JPeminjam;
-    private javax.swing.JLabel JPeminjam1;
-    private javax.swing.JLabel LDashboard1;
     private javax.swing.JLabel LPeminjam;
-    private javax.swing.JLabel LPeminjam1;
-    private javax.swing.JLabel SDaschboard1;
     private javax.swing.JLabel TPeminjaman;
-    private javax.swing.JLabel TPeminjaman1;
-    private javax.swing.JTable TbPeminjam1;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JScrollPane jScrollPane2;
     // End of variables declaration//GEN-END:variables
 }

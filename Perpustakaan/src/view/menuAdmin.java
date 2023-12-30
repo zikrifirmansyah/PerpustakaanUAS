@@ -26,20 +26,54 @@ public class menuAdmin extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel2 = new javax.swing.JPanel();
+        panelMain = new javax.swing.JPanel();
+        panelAdmin = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         TbPeminjam = new javax.swing.JTable();
         SDaschboard = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         LDashboard = new javax.swing.JLabel();
-        CPeminjam = new javax.swing.JPanel();
-        TPeminjaman = new javax.swing.JLabel();
-        LPeminjam = new javax.swing.JLabel();
-        JPeminjam = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        BTambahAnggota = new javax.swing.JButton();
+        BKembali = new javax.swing.JButton();
+        Search = new javax.swing.JTextField();
+        BHapusAnggota = new javax.swing.JButton();
+        BHalamanAkhir = new javax.swing.JButton();
+        BHalamanAwal = new javax.swing.JButton();
+        BNext = new javax.swing.JButton();
+        BSebelum = new javax.swing.JButton();
+        jTextField2 = new javax.swing.JTextField();
+        panelAddAdmin = new javax.swing.JPanel();
+        SDaschboard1 = new javax.swing.JLabel();
+        Alamat = new javax.swing.JLabel();
+        LDashboard1 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        BTambahAnggota1 = new javax.swing.JButton();
+        BKembali1 = new javax.swing.JButton();
+        Nim = new javax.swing.JLabel();
+        jTextField3 = new javax.swing.JTextField();
+        Nama = new javax.swing.JLabel();
+        jTextField4 = new javax.swing.JTextField();
+        jTextField5 = new javax.swing.JTextField();
+        RBLaki = new javax.swing.JCheckBox();
+        RBPerempuan = new javax.swing.JCheckBox();
+        JenisKelamin = new javax.swing.JLabel();
+        Email = new javax.swing.JLabel();
+        jTextField7 = new javax.swing.JTextField();
+        NoTelp = new javax.swing.JLabel();
+        jTextField8 = new javax.swing.JTextField();
 
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel2.setPreferredSize(new java.awt.Dimension(940, 530));
-        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        setLayout(new java.awt.CardLayout());
+
+        panelMain.setBackground(new java.awt.Color(255, 255, 255));
+        panelMain.setLayout(new java.awt.CardLayout());
+
+        panelAdmin.setBackground(new java.awt.Color(255, 255, 255));
+        panelAdmin.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        panelAdmin.setPreferredSize(new java.awt.Dimension(940, 530));
+        panelAdmin.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         TbPeminjam.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -54,87 +88,325 @@ public class menuAdmin extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(TbPeminjam);
 
-        jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, 900, 260));
+        panelAdmin.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, 900, 260));
 
         SDaschboard.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         SDaschboard.setForeground(new java.awt.Color(102, 102, 102));
         SDaschboard.setText("Master Data > Admin");
-        jPanel2.add(SDaschboard, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 20, -1, -1));
+        panelAdmin.add(SDaschboard, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 20, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel2.setText("Daftar admin");
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, -1, -1));
+        jLabel2.setText("Daftar Admin");
+        panelAdmin.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, -1, -1));
 
         LDashboard.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/LAdmin(2).png"))); // NOI18N
-        jPanel2.add(LDashboard, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 10, -1, -1));
+        panelAdmin.add(LDashboard, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 10, -1, -1));
 
-        CPeminjam.setBackground(new java.awt.Color(0, 204, 204));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/LAdmin(3).png"))); // NOI18N
+        panelAdmin.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, -1, -1));
 
-        TPeminjaman.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
-        TPeminjaman.setForeground(new java.awt.Color(255, 255, 255));
-        TPeminjaman.setText("Admin");
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel3.setText("Admin");
+        panelAdmin.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 60, -1, -1));
 
-        LPeminjam.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        LPeminjam.setForeground(new java.awt.Color(255, 255, 255));
-        LPeminjam.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/LAdmin(2).png"))); // NOI18N
+        BTambahAnggota.setBackground(new java.awt.Color(51, 153, 255));
+        BTambahAnggota.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        BTambahAnggota.setForeground(new java.awt.Color(255, 255, 255));
+        BTambahAnggota.setText("Tambah");
+        BTambahAnggota.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BTambahAnggotaMouseClicked(evt);
+            }
+        });
+        BTambahAnggota.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BTambahAnggotaActionPerformed(evt);
+            }
+        });
+        panelAdmin.add(BTambahAnggota, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 480, 90, -1));
 
-        JPeminjam.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        JPeminjam.setForeground(new java.awt.Color(255, 255, 255));
-        JPeminjam.setText("000");
+        BKembali.setBackground(new java.awt.Color(0, 204, 204));
+        BKembali.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        BKembali.setForeground(new java.awt.Color(255, 255, 255));
+        BKembali.setText("Kembali");
+        BKembali.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BKembaliActionPerformed(evt);
+            }
+        });
+        panelAdmin.add(BKembali, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 480, 90, -1));
 
-        javax.swing.GroupLayout CPeminjamLayout = new javax.swing.GroupLayout(CPeminjam);
-        CPeminjam.setLayout(CPeminjamLayout);
-        CPeminjamLayout.setHorizontalGroup(
-            CPeminjamLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(CPeminjamLayout.createSequentialGroup()
-                .addGroup(CPeminjamLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(CPeminjamLayout.createSequentialGroup()
-                        .addGap(19, 19, 19)
-                        .addComponent(JPeminjam))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CPeminjamLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(TPeminjaman)))
-                .addGap(31, 31, 31)
-                .addComponent(LPeminjam)
-                .addContainerGap(36, Short.MAX_VALUE))
-        );
-        CPeminjamLayout.setVerticalGroup(
-            CPeminjamLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(CPeminjamLayout.createSequentialGroup()
-                .addGap(12, 12, 12)
-                .addComponent(TPeminjaman, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(CPeminjamLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(JPeminjam)
-                    .addComponent(LPeminjam))
-                .addContainerGap(15, Short.MAX_VALUE))
-        );
+        Search.setForeground(new java.awt.Color(153, 153, 153));
+        Search.setText("Cari");
+        panelAdmin.add(Search, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 150, 220, -1));
 
-        jPanel2.add(CPeminjam, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 180, 100));
+        BHapusAnggota.setBackground(new java.awt.Color(255, 51, 51));
+        BHapusAnggota.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        BHapusAnggota.setForeground(new java.awt.Color(255, 255, 255));
+        BHapusAnggota.setText("Hapus");
+        BHapusAnggota.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BHapusAnggotaActionPerformed(evt);
+            }
+        });
+        panelAdmin.add(BHapusAnggota, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 480, 90, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 539, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
+        BHalamanAkhir.setText("Halaman Terakhir");
+        panelAdmin.add(BHalamanAkhir, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 480, -1, 40));
+
+        BHalamanAwal.setText("Halaman Pertama");
+        panelAdmin.add(BHalamanAwal, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 480, -1, 40));
+
+        BNext.setText(">");
+        BNext.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BNextActionPerformed(evt);
+            }
+        });
+        panelAdmin.add(BNext, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 480, 20, 40));
+
+        BSebelum.setText("<");
+        BSebelum.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BSebelumActionPerformed(evt);
+            }
+        });
+        panelAdmin.add(BSebelum, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 480, 20, 40));
+
+        jTextField2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField2.setText("1");
+        jTextField2.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        panelAdmin.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 480, 60, 40));
+
+        panelMain.add(panelAdmin, "card2");
+
+        panelAddAdmin.setBackground(new java.awt.Color(255, 255, 255));
+        panelAddAdmin.setPreferredSize(new java.awt.Dimension(940, 530));
+        panelAddAdmin.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        SDaschboard1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        SDaschboard1.setForeground(new java.awt.Color(102, 102, 102));
+        SDaschboard1.setText("Master Data > Admin");
+        panelAddAdmin.add(SDaschboard1, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 20, -1, -1));
+
+        Alamat.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Alamat.setText("Alamat");
+        panelAddAdmin.add(Alamat, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 340, -1, -1));
+
+        LDashboard1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/LAdmin(2).png"))); // NOI18N
+        panelAddAdmin.add(LDashboard1, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 10, -1, -1));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/LAdmin(3).png"))); // NOI18N
+        panelAddAdmin.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, -1));
+
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel5.setText("Tambah Admin");
+        panelAddAdmin.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 30, -1, -1));
+
+        BTambahAnggota1.setBackground(new java.awt.Color(51, 153, 255));
+        BTambahAnggota1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        BTambahAnggota1.setForeground(new java.awt.Color(255, 255, 255));
+        BTambahAnggota1.setText("Tambah");
+        BTambahAnggota1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BTambahAnggota1ActionPerformed(evt);
+            }
+        });
+        panelAddAdmin.add(BTambahAnggota1, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 480, 90, -1));
+
+        BKembali1.setBackground(new java.awt.Color(0, 204, 204));
+        BKembali1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        BKembali1.setForeground(new java.awt.Color(255, 255, 255));
+        BKembali1.setText("Kembali");
+        BKembali1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BKembali1ActionPerformed(evt);
+            }
+        });
+        panelAddAdmin.add(BKembali1, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 480, 90, -1));
+
+        Nim.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Nim.setText("ID");
+        panelAddAdmin.add(Nim, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 100, -1, -1));
+
+        jTextField3.setForeground(new java.awt.Color(153, 153, 153));
+        jTextField3.setText("ID");
+        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField3ActionPerformed(evt);
+            }
+        });
+        panelAddAdmin.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, 870, -1));
+
+        Nama.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Nama.setText("Nama");
+        panelAddAdmin.add(Nama, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 160, -1, -1));
+
+        jTextField4.setForeground(new java.awt.Color(153, 153, 153));
+        jTextField4.setText("Nama");
+        jTextField4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField4ActionPerformed(evt);
+            }
+        });
+        panelAddAdmin.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 190, 870, -1));
+
+        jTextField5.setForeground(new java.awt.Color(153, 153, 153));
+        jTextField5.setText("Alamat");
+        jTextField5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField5ActionPerformed(evt);
+            }
+        });
+        panelAddAdmin.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 370, 870, -1));
+
+        RBLaki.setText("Laki-laki");
+        RBLaki.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RBLakiActionPerformed(evt);
+            }
+        });
+        panelAddAdmin.add(RBLaki, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 430, -1, -1));
+
+        RBPerempuan.setText("Perempuan");
+        panelAddAdmin.add(RBPerempuan, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 430, -1, -1));
+
+        JenisKelamin.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        JenisKelamin.setText("Jenis Kelamin");
+        panelAddAdmin.add(JenisKelamin, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 400, -1, -1));
+
+        Email.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Email.setText("Email");
+        panelAddAdmin.add(Email, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, -1, -1));
+
+        jTextField7.setForeground(new java.awt.Color(153, 153, 153));
+        jTextField7.setText("Email");
+        jTextField7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField7ActionPerformed(evt);
+            }
+        });
+        panelAddAdmin.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 250, 870, -1));
+
+        NoTelp.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        NoTelp.setText("No Telp");
+        panelAddAdmin.add(NoTelp, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 280, -1, -1));
+
+        jTextField8.setForeground(new java.awt.Color(153, 153, 153));
+        jTextField8.setText("No Telp");
+        jTextField8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField8ActionPerformed(evt);
+            }
+        });
+        panelAddAdmin.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 310, 870, -1));
+
+        panelMain.add(panelAddAdmin, "card3");
+
+        add(panelMain, "card3");
     }// </editor-fold>//GEN-END:initComponents
+
+    private void BTambahAnggotaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BTambahAnggotaMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BTambahAnggotaMouseClicked
+
+    private void BTambahAnggotaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTambahAnggotaActionPerformed
+        panelMain.removeAll();
+        panelMain.add(panelAddAdmin);
+        panelMain.repaint();
+        panelMain.revalidate();
+    }//GEN-LAST:event_BTambahAnggotaActionPerformed
+
+    private void BKembaliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BKembaliActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BKembaliActionPerformed
+
+    private void BHapusAnggotaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BHapusAnggotaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BHapusAnggotaActionPerformed
+
+    private void BNextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BNextActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BNextActionPerformed
+
+    private void BSebelumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BSebelumActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BSebelumActionPerformed
+
+    private void BTambahAnggota1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTambahAnggota1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BTambahAnggota1ActionPerformed
+
+    private void BKembali1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BKembali1ActionPerformed
+        panelMain.removeAll();
+        panelMain.add(panelAdmin);
+        panelMain.repaint();
+        panelMain.revalidate();
+    }//GEN-LAST:event_BKembali1ActionPerformed
+
+    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField3ActionPerformed
+
+    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField4ActionPerformed
+
+    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField5ActionPerformed
+
+    private void RBLakiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RBLakiActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_RBLakiActionPerformed
+
+    private void jTextField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField7ActionPerformed
+
+    private void jTextField8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField8ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel CPeminjam;
-    private javax.swing.JLabel JPeminjam;
+    private javax.swing.JLabel Alamat;
+    private javax.swing.JButton BHalamanAkhir;
+    private javax.swing.JButton BHalamanAwal;
+    private javax.swing.JButton BHapusAnggota;
+    private javax.swing.JButton BKembali;
+    private javax.swing.JButton BKembali1;
+    private javax.swing.JButton BNext;
+    private javax.swing.JButton BSebelum;
+    private javax.swing.JButton BTambahAnggota;
+    private javax.swing.JButton BTambahAnggota1;
+    private javax.swing.JLabel Email;
+    private javax.swing.JLabel JenisKelamin;
     private javax.swing.JLabel LDashboard;
-    private javax.swing.JLabel LPeminjam;
+    private javax.swing.JLabel LDashboard1;
+    private javax.swing.JLabel Nama;
+    private javax.swing.JLabel Nim;
+    private javax.swing.JLabel NoTelp;
+    private javax.swing.JCheckBox RBLaki;
+    private javax.swing.JCheckBox RBPerempuan;
     private javax.swing.JLabel SDaschboard;
-    private javax.swing.JLabel TPeminjaman;
+    private javax.swing.JLabel SDaschboard1;
+    private javax.swing.JTextField Search;
     private javax.swing.JTable TbPeminjam;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JPanel jPanel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField jTextField7;
+    private javax.swing.JTextField jTextField8;
+    private javax.swing.JPanel panelAddAdmin;
+    private javax.swing.JPanel panelAdmin;
+    private javax.swing.JPanel panelMain;
     // End of variables declaration//GEN-END:variables
 }

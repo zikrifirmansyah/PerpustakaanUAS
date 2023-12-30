@@ -27,16 +27,46 @@ public class menuAnggota extends javax.swing.JPanel {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
-        CAnggota2 = new javax.swing.JPanel();
-        TAnggota2 = new javax.swing.JLabel();
-        LAnggota2 = new javax.swing.JLabel();
-        JAnggota2 = new javax.swing.JLabel();
+        panelMain = new javax.swing.JPanel();
+        panelAnggota = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         TbPeminjam = new javax.swing.JTable();
         SDaschboard = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         LDashboard = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        BTambahAnggota = new javax.swing.JButton();
+        BKembali = new javax.swing.JButton();
+        Search = new javax.swing.JTextField();
+        BHapusAnggota = new javax.swing.JButton();
+        BHalamanAkhir = new javax.swing.JButton();
+        BHalamanAwal = new javax.swing.JButton();
+        BNext = new javax.swing.JButton();
+        BSebelum = new javax.swing.JButton();
+        jTextField2 = new javax.swing.JTextField();
+        panelAdd = new javax.swing.JPanel();
+        SDaschboard1 = new javax.swing.JLabel();
+        Alamat = new javax.swing.JLabel();
+        LDashboard1 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        BTambahAnggota1 = new javax.swing.JButton();
+        BKembali1 = new javax.swing.JButton();
+        Nim = new javax.swing.JLabel();
+        jTextField3 = new javax.swing.JTextField();
+        Nama = new javax.swing.JLabel();
+        jTextField4 = new javax.swing.JTextField();
+        Prodi = new javax.swing.JLabel();
+        jTextField5 = new javax.swing.JTextField();
+        RBLaki = new javax.swing.JCheckBox();
+        RBPerempuan = new javax.swing.JCheckBox();
+        JenisKelamin = new javax.swing.JLabel();
+        jTextField6 = new javax.swing.JTextField();
+        Email = new javax.swing.JLabel();
+        jTextField7 = new javax.swing.JTextField();
+        NoTelp = new javax.swing.JLabel();
+        jTextField8 = new javax.swing.JTextField();
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -49,53 +79,16 @@ public class menuAnggota extends javax.swing.JPanel {
             .addGap(0, 539, Short.MAX_VALUE)
         );
 
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel2.setPreferredSize(new java.awt.Dimension(940, 530));
-        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        setLayout(new java.awt.CardLayout());
 
-        CAnggota2.setBackground(new java.awt.Color(0, 204, 204));
+        panelMain.setBackground(new java.awt.Color(255, 255, 255));
+        panelMain.setPreferredSize(new java.awt.Dimension(940, 530));
+        panelMain.setLayout(new java.awt.CardLayout());
 
-        TAnggota2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        TAnggota2.setForeground(new java.awt.Color(255, 255, 255));
-        TAnggota2.setText("Anggota");
-
-        LAnggota2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        LAnggota2.setForeground(new java.awt.Color(255, 255, 255));
-        LAnggota2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/group (1).png"))); // NOI18N
-
-        JAnggota2.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        JAnggota2.setForeground(new java.awt.Color(255, 255, 255));
-        JAnggota2.setText("000");
-
-        javax.swing.GroupLayout CAnggota2Layout = new javax.swing.GroupLayout(CAnggota2);
-        CAnggota2.setLayout(CAnggota2Layout);
-        CAnggota2Layout.setHorizontalGroup(
-            CAnggota2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(CAnggota2Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(CAnggota2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(TAnggota2)
-                    .addGroup(CAnggota2Layout.createSequentialGroup()
-                        .addGap(6, 6, 6)
-                        .addComponent(JAnggota2)))
-                .addGap(18, 18, 18)
-                .addComponent(LAnggota2)
-                .addGap(37, 37, 37))
-        );
-        CAnggota2Layout.setVerticalGroup(
-            CAnggota2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(CAnggota2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(CAnggota2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(LAnggota2)
-                    .addGroup(CAnggota2Layout.createSequentialGroup()
-                        .addComponent(TAnggota2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(JAnggota2)))
-                .addContainerGap(15, Short.MAX_VALUE))
-        );
-
-        jPanel2.add(CAnggota2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 170, 100));
+        panelAnggota.setBackground(new java.awt.Color(255, 255, 255));
+        panelAnggota.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        panelAnggota.setPreferredSize(new java.awt.Dimension(940, 530));
+        panelAnggota.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         TbPeminjam.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -110,44 +103,347 @@ public class menuAnggota extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(TbPeminjam);
 
-        jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, 900, 260));
+        panelAnggota.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, 900, 260));
 
         SDaschboard.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         SDaschboard.setForeground(new java.awt.Color(102, 102, 102));
         SDaschboard.setText("Master Data > Anggota");
-        jPanel2.add(SDaschboard, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 20, -1, -1));
+        panelAnggota.add(SDaschboard, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 20, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel2.setText("Daftar Anggota");
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, -1, -1));
+        panelAnggota.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, -1, -1));
 
         LDashboard.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/LAnggota(2).png"))); // NOI18N
-        jPanel2.add(LDashboard, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 10, -1, -1));
+        panelAnggota.add(LDashboard, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 10, -1, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 539, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/LAnggota.png"))); // NOI18N
+        panelAnggota.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, -1, -1));
+
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel3.setText("Anggota Perpustakaan");
+        panelAnggota.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 60, -1, -1));
+
+        BTambahAnggota.setBackground(new java.awt.Color(51, 153, 255));
+        BTambahAnggota.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        BTambahAnggota.setForeground(new java.awt.Color(255, 255, 255));
+        BTambahAnggota.setText("Tambah");
+        BTambahAnggota.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BTambahAnggotaMouseClicked(evt);
+            }
+        });
+        BTambahAnggota.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BTambahAnggotaActionPerformed(evt);
+            }
+        });
+        panelAnggota.add(BTambahAnggota, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 480, 90, -1));
+
+        BKembali.setBackground(new java.awt.Color(0, 204, 204));
+        BKembali.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        BKembali.setForeground(new java.awt.Color(255, 255, 255));
+        BKembali.setText("Kembali");
+        BKembali.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BKembaliActionPerformed(evt);
+            }
+        });
+        panelAnggota.add(BKembali, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 480, 90, -1));
+
+        Search.setForeground(new java.awt.Color(153, 153, 153));
+        Search.setText("Cari");
+        panelAnggota.add(Search, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 150, 220, -1));
+
+        BHapusAnggota.setBackground(new java.awt.Color(255, 51, 51));
+        BHapusAnggota.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        BHapusAnggota.setForeground(new java.awt.Color(255, 255, 255));
+        BHapusAnggota.setText("Hapus");
+        BHapusAnggota.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BHapusAnggotaActionPerformed(evt);
+            }
+        });
+        panelAnggota.add(BHapusAnggota, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 480, 90, -1));
+
+        BHalamanAkhir.setText("Halaman Terakhir");
+        panelAnggota.add(BHalamanAkhir, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 480, -1, 40));
+
+        BHalamanAwal.setText("Halaman Pertama");
+        panelAnggota.add(BHalamanAwal, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 480, -1, 40));
+
+        BNext.setText(">");
+        BNext.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BNextActionPerformed(evt);
+            }
+        });
+        panelAnggota.add(BNext, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 480, 20, 40));
+
+        BSebelum.setText("<");
+        BSebelum.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BSebelumActionPerformed(evt);
+            }
+        });
+        panelAnggota.add(BSebelum, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 480, 20, 40));
+
+        jTextField2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField2.setText("1");
+        jTextField2.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        panelAnggota.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 480, 60, 40));
+
+        panelMain.add(panelAnggota, "card2");
+
+        panelAdd.setBackground(new java.awt.Color(255, 255, 255));
+        panelAdd.setPreferredSize(new java.awt.Dimension(940, 530));
+        panelAdd.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        SDaschboard1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        SDaschboard1.setForeground(new java.awt.Color(102, 102, 102));
+        SDaschboard1.setText("Master Data > Anggota");
+        panelAdd.add(SDaschboard1, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 20, -1, -1));
+
+        Alamat.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Alamat.setText("Alamat");
+        panelAdd.add(Alamat, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 350, -1, -1));
+
+        LDashboard1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/LAnggota(2).png"))); // NOI18N
+        panelAdd.add(LDashboard1, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 10, -1, -1));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/LAnggota.png"))); // NOI18N
+        panelAdd.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, -1));
+
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel5.setText("Tambah Anggota Perpustakaan");
+        panelAdd.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 30, -1, -1));
+
+        BTambahAnggota1.setBackground(new java.awt.Color(51, 153, 255));
+        BTambahAnggota1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        BTambahAnggota1.setForeground(new java.awt.Color(255, 255, 255));
+        BTambahAnggota1.setText("Tambah");
+        BTambahAnggota1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BTambahAnggota1ActionPerformed(evt);
+            }
+        });
+        panelAdd.add(BTambahAnggota1, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 480, 90, -1));
+
+        BKembali1.setBackground(new java.awt.Color(0, 204, 204));
+        BKembali1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        BKembali1.setForeground(new java.awt.Color(255, 255, 255));
+        BKembali1.setText("Kembali");
+        BKembali1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BKembali1ActionPerformed(evt);
+            }
+        });
+        panelAdd.add(BKembali1, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 480, 90, -1));
+
+        Nim.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Nim.setText("NIM");
+        panelAdd.add(Nim, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 100, -1, -1));
+
+        jTextField3.setForeground(new java.awt.Color(153, 153, 153));
+        jTextField3.setText("NIM");
+        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField3ActionPerformed(evt);
+            }
+        });
+        panelAdd.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 870, -1));
+
+        Nama.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Nama.setText("Nama");
+        panelAdd.add(Nama, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, -1, -1));
+
+        jTextField4.setForeground(new java.awt.Color(153, 153, 153));
+        jTextField4.setText("Nama");
+        jTextField4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField4ActionPerformed(evt);
+            }
+        });
+        panelAdd.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, 870, -1));
+
+        Prodi.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Prodi.setText("Prodi");
+        panelAdd.add(Prodi, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, -1, -1));
+
+        jTextField5.setForeground(new java.awt.Color(153, 153, 153));
+        jTextField5.setText("Alamat");
+        jTextField5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField5ActionPerformed(evt);
+            }
+        });
+        panelAdd.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 370, 870, -1));
+
+        RBLaki.setText("Laki-laki");
+        RBLaki.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RBLakiActionPerformed(evt);
+            }
+        });
+        panelAdd.add(RBLaki, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 430, -1, -1));
+
+        RBPerempuan.setText("Perempuan");
+        panelAdd.add(RBPerempuan, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 430, -1, -1));
+
+        JenisKelamin.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        JenisKelamin.setText("Jenis Kelamin");
+        panelAdd.add(JenisKelamin, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 400, -1, -1));
+
+        jTextField6.setForeground(new java.awt.Color(153, 153, 153));
+        jTextField6.setText("Prodi");
+        jTextField6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField6ActionPerformed(evt);
+            }
+        });
+        panelAdd.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, 870, -1));
+
+        Email.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Email.setText("Email");
+        panelAdd.add(Email, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 250, -1, -1));
+
+        jTextField7.setForeground(new java.awt.Color(153, 153, 153));
+        jTextField7.setText("Email");
+        jTextField7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField7ActionPerformed(evt);
+            }
+        });
+        panelAdd.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 270, 870, -1));
+
+        NoTelp.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        NoTelp.setText("No Telp");
+        panelAdd.add(NoTelp, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 300, -1, -1));
+
+        jTextField8.setForeground(new java.awt.Color(153, 153, 153));
+        jTextField8.setText("No Telp");
+        jTextField8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField8ActionPerformed(evt);
+            }
+        });
+        panelAdd.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 320, 870, -1));
+
+        panelMain.add(panelAdd, "card3");
+
+        add(panelMain, "card3");
+
+        getAccessibleContext().setAccessibleName("");
     }// </editor-fold>//GEN-END:initComponents
+
+    private void BTambahAnggotaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTambahAnggotaActionPerformed
+        panelMain.removeAll();
+        panelMain.add(panelAdd);
+        panelMain.repaint();
+        panelMain.revalidate();
+    }//GEN-LAST:event_BTambahAnggotaActionPerformed
+
+    private void BKembaliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BKembaliActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BKembaliActionPerformed
+
+    private void BHapusAnggotaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BHapusAnggotaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BHapusAnggotaActionPerformed
+
+    private void BNextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BNextActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BNextActionPerformed
+
+    private void BSebelumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BSebelumActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BSebelumActionPerformed
+
+    private void BTambahAnggota1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTambahAnggota1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BTambahAnggota1ActionPerformed
+
+    private void BKembali1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BKembali1ActionPerformed
+        panelMain.removeAll();
+        panelMain.add(panelAnggota);
+        panelMain.repaint();
+        panelMain.revalidate();
+    }//GEN-LAST:event_BKembali1ActionPerformed
+
+    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField3ActionPerformed
+
+    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField4ActionPerformed
+
+    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField5ActionPerformed
+
+    private void RBLakiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RBLakiActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_RBLakiActionPerformed
+
+    private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField6ActionPerformed
+
+    private void jTextField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField7ActionPerformed
+
+    private void jTextField8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField8ActionPerformed
+
+    private void BTambahAnggotaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BTambahAnggotaMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BTambahAnggotaMouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel CAnggota2;
-    private javax.swing.JLabel JAnggota2;
-    private javax.swing.JLabel LAnggota2;
+    private javax.swing.JLabel Alamat;
+    private javax.swing.JButton BHalamanAkhir;
+    private javax.swing.JButton BHalamanAwal;
+    private javax.swing.JButton BHapusAnggota;
+    private javax.swing.JButton BKembali;
+    private javax.swing.JButton BKembali1;
+    private javax.swing.JButton BNext;
+    private javax.swing.JButton BSebelum;
+    private javax.swing.JButton BTambahAnggota;
+    private javax.swing.JButton BTambahAnggota1;
+    private javax.swing.JLabel Email;
+    private javax.swing.JLabel JenisKelamin;
     private javax.swing.JLabel LDashboard;
+    private javax.swing.JLabel LDashboard1;
+    private javax.swing.JLabel Nama;
+    private javax.swing.JLabel Nim;
+    private javax.swing.JLabel NoTelp;
+    private javax.swing.JLabel Prodi;
+    private javax.swing.JCheckBox RBLaki;
+    private javax.swing.JCheckBox RBPerempuan;
     private javax.swing.JLabel SDaschboard;
-    private javax.swing.JLabel TAnggota2;
+    private javax.swing.JLabel SDaschboard1;
+    private javax.swing.JTextField Search;
     private javax.swing.JTable TbPeminjam;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField jTextField6;
+    private javax.swing.JTextField jTextField7;
+    private javax.swing.JTextField jTextField8;
+    private javax.swing.JPanel panelAdd;
+    private javax.swing.JPanel panelAnggota;
+    private javax.swing.JPanel panelMain;
     // End of variables declaration//GEN-END:variables
 }

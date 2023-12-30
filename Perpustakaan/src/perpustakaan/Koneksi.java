@@ -8,7 +8,7 @@ package perpustakaan;
  *
  * @author zikri
  */
-public class Perpustakaan {
+public class Koneksi{
 
     /**
      * @param args the command line arguments
