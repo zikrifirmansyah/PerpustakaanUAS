@@ -224,7 +224,7 @@ public class Futama extends javax.swing.JFrame {
             .addGroup(PnAnggotaLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(PnAnggotaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(LAnggota, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(LAnggota, javax.swing.GroupLayout.DEFAULT_SIZE, 38, Short.MAX_VALUE)
                     .addComponent(btn_Anggota, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
             .addGroup(PnAnggotaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -628,7 +628,7 @@ public class Futama extends javax.swing.JFrame {
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, 675, Short.MAX_VALUE)
         );
 
         getContentPane().add(jPanel1, java.awt.BorderLayout.CENTER);
